@@ -5,4 +5,3 @@ router = DefaultRouter()
 router.register(r'', InternshipViewSet)
 
 urlpatterns = router.urls
-�{
