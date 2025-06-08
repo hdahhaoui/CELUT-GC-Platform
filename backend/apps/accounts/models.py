@@ -1,3 +1,9 @@
-~º&v6§‚n)©¢»f¡×¥±úè™ØÚ
-r‰í®&jëajz["šš+µK­úè™ØÚ
-r‰ßŠjh®Û¶Ø§‚È¦¦Šíºè~º&v6§‚¶)lŠjh®Ûb™ìèç%jË®‡â•
+from django.db import models
+from django.contrib.auth.models import User
+
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    bio = models.TextField(blank=True)
+
+    def __str__(self):
+        return self.user.username
