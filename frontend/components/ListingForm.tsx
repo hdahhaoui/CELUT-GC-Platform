@@ -36,9 +36,9 @@ const ListingForm: React.FC<ListingFormProps> = ({ listingType, currentUser, onS
 
     try {
       if (listingType === ListingType.PROJECT) {
-        await apiService.createProject({ ...formData, projectType: formData.projectType!, status: formData.status! }, currentUser);
+        await apiService.createProject({ ...formData, projectType: formData.projectType!, status: formData.status! });
       } else {
-        await apiService.createInternship(formData, currentUser);
+        await apiService.createInternship(formData);
       }
       setIsLoading(false);
       onSuccess(); // Call parent's success handler (e.g., navigate or show message)
