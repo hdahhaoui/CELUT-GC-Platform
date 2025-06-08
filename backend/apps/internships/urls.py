@@ -1,1 +1,8 @@
-~º&v6§‚®["šš+¶–­…úèœâ{
+from rest_framework.routers import DefaultRouter
+from .views import InternshipViewSet
+
+router = DefaultRouter()
+router.register(r'', InternshipViewSet)
+
+urlpatterns = router.urls
+ï¿½{

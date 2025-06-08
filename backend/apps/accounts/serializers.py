@@ -1,1 +1,7 @@
-~º&­ë-ıúÚ™ì(®H¦¦Ší±êâjX³z»®‰©à¤(Úâl
+from rest_framework import serializers
+from .models import Profile
+
+class ProfileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Profile
+        fields = ['id', 'user', 'bio']

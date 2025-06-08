@@ -1,1 +1,7 @@
-~º&­ë-ýúÚ™ì(®H¦¦Ší±êâjX³z»®‰š‡^–È¦¦Ší>º#yË_®‰š¦›iÇ(º{l
+from rest_framework import serializers
+from .models import Project
+
+class ProjectSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Project
+        fields = ['id', 'name', 'description']
