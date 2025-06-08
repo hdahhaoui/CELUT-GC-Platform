@@ -1,1 +1,24 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
 
+# Virtual environments
+.env/
+venv/
+ENV/
+
+# Node.js artifacts
+node_modules/
+
+# Compiled files
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.o
+*.exe
+*.dll
+*.class
+
+# Misc
+.DS_Store
